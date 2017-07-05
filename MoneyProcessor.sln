@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MoneyProcessor", "MoneyProcessor\MoneyProcessor.vbproj", "{42527055-AB7F-4A2E-8BAD-6B5992F42F2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bantuan", "bantuan\bantuan.csproj", "{38E28635-0B17-41AD-9BA4-98C24F8DBDDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42527055-AB7F-4A2E-8BAD-6B5992F42F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42527055-AB7F-4A2E-8BAD-6B5992F42F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42527055-AB7F-4A2E-8BAD-6B5992F42F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42527055-AB7F-4A2E-8BAD-6B5992F42F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E28635-0B17-41AD-9BA4-98C24F8DBDDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E28635-0B17-41AD-9BA4-98C24F8DBDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E28635-0B17-41AD-9BA4-98C24F8DBDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E28635-0B17-41AD-9BA4-98C24F8DBDDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
