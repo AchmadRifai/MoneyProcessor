@@ -1,0 +1,16 @@
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\obj\Debug\MoneyProcessor.vbprojResolveAssemblyReference.cache
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\obj\Debug\MoneyProcessor.Conek.resources
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\obj\Debug\MoneyProcessor.Form1.resources
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\obj\Debug\MoneyProcessor.Resources.resources
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\obj\Debug\MoneyProcessor.vbproj.GenerateResource.Cache
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\bin\Debug\MoneyProcessor.exe.config
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\bin\Debug\MoneyProcessor.exe
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\bin\Debug\MoneyProcessor.pdb
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\bin\Debug\MoneyProcessor.xml
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\bin\Debug\bantuan.dll
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\bin\Debug\MySql.Data.dll
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\bin\Debug\bantuan.pdb
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\bin\Debug\bantuan.dll.config
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\obj\Debug\MoneyProcessor.exe
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\obj\Debug\MoneyProcessor.xml
+C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\MoneyProcessor\obj\Debug\MoneyProcessor.pdb
