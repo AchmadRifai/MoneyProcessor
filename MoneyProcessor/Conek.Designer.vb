@@ -162,7 +162,7 @@ Partial Class Conek
         Me.MinimizeBox = False
         Me.Name = "Conek"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Configurasi basis data"
         CType(Me.port, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

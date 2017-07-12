@@ -49,8 +49,20 @@
     <Compile Include="DBConfig.cs" />
     <Compile Include="Enkripsi.cs" />
     <Compile Include="entity\Aset.cs" />
+    <Compile Include="entity\CicilanKami.cs" />
+    <Compile Include="entity\CicilanOrang.cs" />
     <Compile Include="entity\dao\DAO.cs" />
     <Compile Include="entity\dao\DAOAset.cs" />
+    <Compile Include="entity\dao\DAOCicilanKami.cs" />
+    <Compile Include="entity\dao\DAOCicilanOrang.cs" />
+    <Compile Include="entity\dao\DAOKewajiban.cs" />
+    <Compile Include="entity\dao\DAOPemasukan.cs" />
+    <Compile Include="entity\dao\DAOPengeluaran.cs" />
+    <Compile Include="entity\dao\DAOPiutang.cs" />
+    <Compile Include="entity\Pemasukan.cs" />
+    <Compile Include="entity\Kewajiban.cs" />
+    <Compile Include="entity\Pengeluaran.cs" />
+    <Compile Include="entity\Piutang.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Uang.cs" />
   </ItemGroup>

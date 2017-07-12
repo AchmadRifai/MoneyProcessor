@@ -10,10 +10,33 @@ using MySql.Data.MySqlClient;
 namespace bantuan {
     public class Work {
         public static FileInfo f = new FileInfo(Environment.
-            GetFolderPath(Environment.SpecialFolder.Personal) + "/.fulus/konfig");
+            GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/.fulus/konfig");
 
         public static MySqlConnection getConection() {
-            return null;
+            DBConfig dbc = loadDBC();
+            return dbc.genConection();
+        }
+
+        private static DBConfig loadDBC() {
+            DBConfig dbc = new DBConfig();
+            XmlDocument d = new XmlDocument();
+            d.Load(f.FullName);
+            dbc.Host = loadDataXML("server", d);
+            dbc.Nama = loadDataXML("Database", d);
+            dbc.Pass = loadDataXML("password", d);
+            dbc.User = loadDataXML("uid", d);
+            dbc.Port = Int32.Parse(loadDataXML("port", d));
+            return dbc;
+        }
+
+        private static string loadDataXML(string v, XmlDocument d) {
+            String s = "";
+            XmlNodeList nl = d.GetElementsByTagName(v);
+            Enkripsi e = loadEnk();
+            for(int x = 0; x < nl.Count; x++) if(nl.Item(x).NodeType==XmlNodeType.Element) {
+                    XmlElement el = (XmlElement)nl.Item(x);
+                    s = e.decrypt(el.InnerText);
+            } return s;
         }
 
         public static void hindar(Exception ex) {
@@ -66,18 +89,24 @@ namespace bantuan {
             c.User = user;
             MySqlConnection con = c.genConection();
             jalankan(con, "create database " + nama);
-            c.Nama = nama;
             con.Close();
-            con = c.genConection();
-            nextDB(ref con);
+            c.Nama = nama;
+            nextDB(c.genConection());
         }
 
-        private static void nextDB(ref MySqlConnection c) {
+        private static void nextDB(MySqlConnection c) {
+            new entity.dao.DAOAset(c).createTable();
+            new entity.dao.DAOKewajiban(c).createTable();
+            new entity.dao.DAOPiutang(c).createTable();
+            new entity.dao.DAOPemasukan(c).createTable();
+            new entity.dao.DAOPengeluaran(c).createTable();
+            new entity.dao.DAOCicilanKami(c).createTable();
+            new entity.dao.DAOCicilanOrang(c).createTable();
             c.Close();
         }
 
         public static void jalankan(MySqlConnection c, string s) {
-            MySqlCommand co = new MySqlCommand("s", c);
+            MySqlCommand co = new MySqlCommand(s, c);
             co.ExecuteNonQuery();
         }
 

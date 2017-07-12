@@ -59,13 +59,11 @@ Public Class Conek
     End Sub
 
     Private Sub mlaku2_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles mlaku2.RunWorkerCompleted
-        If e.Error Is Nothing Or e.Cancelled Then
+        If e.Error IsNot Nothing Then
             mlaku1.CancelAsync()
+            MsgBox(e.Error.Message)
             enableAll()
             bantuan.Work.hindar(e.Error)
-        ElseIf Not e.Cancelled Then
-            DialogResult = DialogResult.OK
-            Close()
         End If
     End Sub
 
@@ -83,12 +81,15 @@ Public Class Conek
     End Sub
 
     Private Sub mlaku1_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles mlaku1.RunWorkerCompleted
-        If e.Error Is Nothing Then
+        If e.Error IsNot Nothing Then
             mlaku2.CancelAsync()
+            MsgBox(e.Error.Message)
             enableAll()
             bantuan.Work.hindar(e.Error)
         ElseIf Not e.Cancelled Then
+            MsgBox("Setelah ini jalankan aplikasi kembali")
             DialogResult = DialogResult.OK
+            Form1.Visible = True
             Close()
         End If
     End Sub

@@ -1,7 +1,0 @@
-C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\bantuan\obj\Debug\bantuan.csprojResolveAssemblyReference.cache
-C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\bantuan\bin\Debug\bantuan.dll.config
-C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\bantuan\bin\Debug\bantuan.dll
-C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\bantuan\bin\Debug\bantuan.pdb
-C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\bantuan\bin\Debug\MySql.Data.dll
-C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\bantuan\obj\Debug\bantuan.dll
-C:\Users\ai\documents\visual studio 2017\Projects\MoneyProcessor\bantuan\obj\Debug\bantuan.pdb
